@@ -6,29 +6,29 @@ Este é um projeto de Web API desenvolvido em **Python**, utilizando **FastAPI**
 
 A API implementa os seguintes verbos (endpoints) para as entidades do modelo:
 
-### Entidade 1: `Aluno`
+### Entidade 1: `Job`
 
-1. `GET /api/aluno` – Lista todos os alunos
-2. `POST /api/aluno` – Cria um novo aluno
-3. `GET /api/aluno/{id}` – Retorna um aluno pelo ID (com suas disciplinas e notas)
-4. `PUT /api/aluno/{id}` – Atualiza dados de um aluno
-5. `DELETE /api/aluno/{id}` – Remove um aluno
+1. `GET /api/job` – Lista todos os cargos
+2. `POST /api/job` – Cria um novo cargo
+3. `GET /api/job/{id}` – Retorna um cargo pelo ID (com funcionários associados)
+4. `PUT /api/job/{id}` – Atualiza os dados de um cargo
+5. `DELETE /api/job/{id}` – Remove um cargo
 
-### Entidade 2: `Disciplina`
+### Entidade 2: `Employee`
 
-6. `GET /api/disciplina` – Lista todas as disciplinas
-7. `POST /api/disciplina` – Cria uma nova disciplina
-8. `GET /api/disciplina/{id}` – Retorna uma disciplina pelo ID (com alunos relacionados, se houver)
-9. `PUT /api/disciplina/{id}` – Atualiza dados de uma disciplina
-10. `DELETE /api/disciplina/{id}` – Remove uma disciplina
+6. `GET /api/employee` – Lista todos os funcionários
+7. `POST /api/employee` – Cria um novo funcionário
+8. `GET /api/employee/{id}` – Retorna um funcionário pelo ID (com seu cargo e histórico de cargos)
+9. `PUT /api/employee/{id}` – Atualiza os dados de um funcionário
+10. `DELETE /api/employee/{id}` – Remove um funcionário
 
-### Entidade 3: `Nota`
+### Entidade 3: `JobHistory`
 
-11. `GET /api/nota` – Lista todas as notas
-12. `POST /api/nota` – Cria uma nova nota
-13. `GET /api/nota/{id}` – Retorna uma nota pelo ID
-14. `PUT /api/nota/{id}` – Atualiza dados de uma nota
-15. `DELETE /api/nota/{id}` – Remove uma nota
+11. `GET /api/jobhistory` – Lista todo o histórico de cargos
+12. `POST /api/jobhistory` – Cria um novo registro de histórico de cargo
+13. `GET /api/jobhistory/{id}` – Retorna um registro de histórico pelo ID
+14. `PUT /api/jobhistory/{id}` – Atualiza os dados de um histórico de cargo
+15. `DELETE /api/jobhistory/{id}` – Remove um registro de histórico de cargo
 
 ## Diagrama de Entidades (Mermaid)
 
